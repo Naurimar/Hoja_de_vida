@@ -1,0 +1,148 @@
+﻿/* ======== CONFIGURACIÓN GENERAL ======== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3f6fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* ======== HEADER ======== */
+.header {
+  background: linear-gradient(90deg, #004aad, #0078d4);
+  color: white;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid white;
+  object-fit: cover;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.header p {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* ======== SECCIONES ======== */
+.section {
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.section h2 {
+  text-align: center;
+  color: #004aad;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* ======== SKILLS ======== */
+.skills ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+}
+
+.skills li {
+  background-color: #004aad;
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.skills li:hover {
+  background-color: #0078d4;
+}
+
+/* ======== PROJECTS ======== */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background-color: #f8f9fb;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+  color: #004aad;
+  margin-bottom: 0.5rem;
+}
+
+/* ======== CONTACTO ======== */
+.contact {
+  text-align: center;
+}
+
+.contact p {
+  font-size: 1.1rem;
+}
+
+.contact strong {
+  color: #004aad;
+}
+
+/* ======== FOOTER ======== */
+.footer {
+  background-color: #004aad;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.95rem;
+  margin-top: 3rem;
+}
