@@ -1,4 +1,5 @@
-﻿export default function Contact() {
+﻿// Actualización para commit del Contact
+export default function Contact() {
   return (
     <section className='section contact'>
       <h2>Contacto</h2>
