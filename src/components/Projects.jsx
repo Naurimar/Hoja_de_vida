@@ -1,4 +1,5 @@
-﻿export default function Projects() {
+﻿// Actualización para commit del Projects
+export default function Projects() {
   const projects = [
     { name: 'Portafolio Personal', description: 'Sitio web creado con React y Vite.' },
     { name: 'Gestor de Tareas', description: 'Aplicación CRUD con almacenamiento local.' },
