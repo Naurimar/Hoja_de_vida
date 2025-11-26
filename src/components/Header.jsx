@@ -1,4 +1,5 @@
-﻿
+﻿// Actualización para commit del Header
+
 export default function Header() {
   return (
     <header className='header'>
