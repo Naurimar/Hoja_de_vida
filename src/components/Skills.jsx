@@ -1,4 +1,6 @@
-﻿export default function Skills() {
+﻿// Actualización para commit del Skills
+
+export default function Skills() {
   const skills = ['HTML', 'CSS', 'JavaScript', 'React', 'Git', 'Vite'];
   return (
     <section className='section skills'>
