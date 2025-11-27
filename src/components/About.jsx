@@ -1,18 +1,17 @@
-﻿// Actualización para commit del About
+﻿
 
+// --- COMPONENTE ABOUT --- //
 export default function About() {
   return (
-    <section className='section about'>
+    <section>
       <h2>Sobre mí</h2>
-      <p>
-        Soy una desarrolladora apasionada por la tecnología, el diseño y la creación de experiencias interactivas.
-        Me gusta aprender nuevas herramientas y aplicar buenas prácticas en el desarrollo web moderno.
-      </p>
+      <p>Descripción personal...</p>
     </section>
   );
 }
-// src/components/Educacion.jsx
-const formacion = [
+
+// --- COMPONENTE EDUCACION --- //
+const estudios = [
   { institucion: "SENA", curso: "Análisis y Desarrollo de Software", año: 2024 },
   { institucion: "SENA", curso: "Fundamentos de Programación", año: 2023 },
   { institucion: "Platzi", curso: "Curso de HTML y CSS", año: 2022 },
@@ -23,14 +22,14 @@ const formacion = [
   { institucion: "Microsoft Learn", curso: "Azure Basics", año: 2023 }
 ];
 
-export default function Educacion() {
+export function Educacion() {
   return (
     <section>
       <h2>Educación</h2>
-      {formacion.map((edu, index) => (
+      {estudios.map((est, index) => (
         <div key={index} className="card">
-          <h3>{edu.curso} - {edu.año}</h3>
-          <p><strong>Institución:</strong> {edu.institucion}</p>
+          <h3>{est.titulo} - {est.año}</h3>
+          <p>{est.institucion}</p>
         </div>
       ))}
     </section>
