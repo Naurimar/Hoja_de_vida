@@ -1,4 +1,4 @@
-﻿// Actualización para commit del Projects
+﻿// --- COMPONENTE PROJECTS --- //
 export default function Projects() {
   const projects = [
     { name: 'Portafolio Personal', description: 'Sitio web creado con React y Vite.' },
@@ -20,7 +20,8 @@ export default function Projects() {
   );
 }
 
-// src/components/Experiencia.jsx
+
+// --- COMPONENTE EXPERIENCIA --- //
 const experiencias = [
   { cargo: "Desarrollador Frontend", empresa: "TechSoft", año: 2023, descripcion: "Diseño de interfaces con React y Tailwind." },
   { cargo: "Soporte Técnico", empresa: "CompuRed", año: 2022, descripcion: "Atención a usuarios y mantenimiento de equipos." },
@@ -34,7 +35,7 @@ const experiencias = [
   { cargo: "Prácticas de Desarrollo", empresa: "DevCompany", año: 2021, descripcion: "Automatización de tareas y scripts básicos." }
 ];
 
-export default function Experiencia() {
+export function Experiencia() {
   return (
     <section>
       <h2>Experiencia</h2>
@@ -48,4 +49,3 @@ export default function Experiencia() {
     </section>
   );
 }
-
