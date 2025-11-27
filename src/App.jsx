@@ -1,7 +1,7 @@
 ﻿// Actualización para commit del App.jsx
 
 import Header from './components/Header'
-import About from './components/About'
+import About, { Educacion } from "./components/About";
 import Skills from './components/Skills'
 import Projects, { Experiencia } from "./components/Projects";
 import Contact from './components/Contact'
