@@ -19,3 +19,33 @@ export default function Projects() {
     </section>
   );
 }
+
+// src/components/Experiencia.jsx
+const experiencias = [
+  { cargo: "Desarrollador Frontend", empresa: "TechSoft", año: 2023, descripcion: "Diseño de interfaces con React y Tailwind." },
+  { cargo: "Soporte Técnico", empresa: "CompuRed", año: 2022, descripcion: "Atención a usuarios y mantenimiento de equipos." },
+  { cargo: "Full Stack Junior", empresa: "Innovatech", año: 2024, descripcion: "Creación de APIs y frontend con Node y React." },
+  { cargo: "Proyecto Personal", empresa: "GitHub", año: 2023, descripcion: "CV digital desarrollado con React y Vite." },
+  { cargo: "Proyecto Ecommerce", empresa: "Freelance", año: 2023, descripcion: "Tienda online con carrito y dashboard." },
+  { cargo: "Proyecto CRUD", empresa: "Freelance", año: 2024, descripcion: "CRUD completo con Express y MongoDB." },
+  { cargo: "Asistente de Desarrollo", empresa: "CodeLab", año: 2021, descripcion: "Refactorización y documentación de módulos." },
+  { cargo: "Proyecto Landing Page", empresa: "Freelance", año: 2022, descripcion: "Página promocional con HTML, CSS y JS." },
+  { cargo: "Tester QA Junior", empresa: "SoftPruebas", año: 2022, descripcion: "Pruebas funcionales y reporte de bugs." },
+  { cargo: "Prácticas de Desarrollo", empresa: "DevCompany", año: 2021, descripcion: "Automatización de tareas y scripts básicos." }
+];
+
+export default function Experiencia() {
+  return (
+    <section>
+      <h2>Experiencia</h2>
+      {experiencias.map((exp, index) => (
+        <div key={index} className="card">
+          <h3>{exp.cargo} - {exp.año}</h3>
+          <p><strong>Empresa:</strong> {exp.empresa}</p>
+          <p>{exp.descripcion}</p>
+        </div>
+      ))}
+    </section>
+  );
+}
+
