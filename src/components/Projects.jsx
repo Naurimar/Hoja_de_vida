@@ -3,6 +3,10 @@ export default function Projects() {
   const projects = [
     { name: 'Portafolio Personal', description: 'Sitio web creado con React y Vite.' },
     { name: 'Gestor de Tareas', description: 'Aplicación CRUD con almacenamiento local.' },
+    { name: 'Calculadora', description: 'Calculadora funcional con React.' },
+    { name: 'Blog Personal', description: 'Blog desarrollado con Gatsby y Markdown.' },
+    { name: 'Tienda Online', description: 'E-commerce con carrito de compras y dashboard.' },
+    { name: 'Chat en Tiempo Real', description: 'Aplicación de chat usando Socket.io.' }
   ];
 
   return (
