@@ -35,5 +35,18 @@ export default function StackTecnologias() {
     </section>
   );
 }
+export default function Skills({ lista }) {
+  return (
+    <section>
+      <h2>Habilidades</h2>
+      <ul>
+        {lista.map((skill, index) => (
+          <li key={index}>{skill}</li>
+        ))}
+      </ul>
+    </section>
+  );
+}
+
 
 
