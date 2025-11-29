@@ -1,14 +1,17 @@
 ﻿
 
-// --- COMPONENTE ABOUT --- //
-export default function About() {
+export default function About({ descripcion }) {
   return (
     <section>
       <h2>Sobre mí</h2>
-      <p>Descripción personal...</p>
+      <p>{descripcion} soy una persona creativa que cumple con responsabilidad cada una 
+        de las tareas que se me asignan, además de tener un gran interés por el desarrollo web 
+        y el aprendizaje continuo. Mi objetivo es convertirme en un profesional exitoso en este campo.
+      </p>
     </section>
   );
 }
+
 
 // --- COMPONENTE EDUCACION --- //
 const estudios = [
