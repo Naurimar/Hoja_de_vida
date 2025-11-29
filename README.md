@@ -24,3 +24,30 @@ El ejercicio se centra en el uso de:
 - Componentes dinámicos  
 - Estilización con colores según condiciones  
 - Control de versiones con Git y commits organizados  
+
+# CV React – Reutilización de Componentes con Props y Desestructuración
+
+Este proyecto corresponde a la actividad GA1-220501096-03-AA1-EV07, donde se amplía un CV digital implementando:
+
+- Componentes reutilizables
+- Uso de props
+- Desestructuración
+- Mapeo de listas desde App.jsx
+- Separación de datos en archivo independiente
+
+## Componentes creados
+
+- **CabeceraCV.jsx** → recibe nombre, cargo, ciudad y contacto  
+- **Perfil.jsx** → recibe el resumen profesional  
+- **Experiencia.jsx** → recibe un arreglo de experiencias  
+- **Educacion.jsx** → recibe lista de estudios  
+
+Todos los componentes utilizan props y desestructuración.
+
+## Datos centralizados
+
+Toda la información está ubicada en `data.js` y se pasa a los componentes desde `App.jsx`.
+
+## Ejecución del proyecto
+
+1. Instalar dependencias  
